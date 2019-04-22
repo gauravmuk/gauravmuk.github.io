@@ -11,8 +11,11 @@
     <script>
         const browser = bowser.getParser(window.navigator.userAgent);
         document.querySelector('#debug-info').innerHTML =
-            `<b>Browser Name</b>: ${browser.getBrowserName()}
-            <b>Browser Version</b>: ${browser.getBrowserVersion()}`;
+            `<b>Browser Name</b>: ${browser.getBrowserName().toLowerCase()}
+            <b>Browser Version</b>: ${parseInt(browser.getBrowserVersion(), 10)}
+            <b>Device Type</b>: ${browser.getPlatformType(true)}
+            <b>hasNotificationSupport</b>: ${"Notification" in window}
+            <b>navigatorHasServiceWorker</b>: ${'serviceWorker' in navigator}`;
     </script>
 </body>
 </html>
