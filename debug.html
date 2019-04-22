@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PushCrew Customer Issues Debugging</title>
+</head>
+<body>
+    <h1>PushCrew Debugging</h1>
+    <div id="debug-info"></div>
+    <script src="es5.js"></script>
+    <script>
+        const browser = bowser.getParser(window.navigator.userAgent);
+        document.querySelector('#debug-info').innerHTML =
+            `<b>Browser Name</b>: ${browser.getBrowserName()}
+            <b>Browser Version</b>: ${browser.getBrowserVersion()}`;
+    </script>
+</body>
+</html>
