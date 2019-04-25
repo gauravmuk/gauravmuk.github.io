@@ -52,6 +52,37 @@
     </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-experiment" src="./amp-experiment-1.0.js"></script>
+
+    <amp-experiment>
+        <script type="application/json">
+            {
+                "vwo": {
+                    "sticky": true,
+                    "variants": {
+                        "0": {
+                            "weight": 33.3,
+                            "mutations": [{
+                                "type": "characterData",
+                                "target": "article > h1",
+                                "value": "React.js"
+                            }]
+                        },
+                        "1": {
+                            "weight": 33.3,
+                            "mutations": [{
+                                "type": "characterData",
+                                "target": "article > h1",
+                                "value": "Vue.js"
+                            }]
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-experiment>
+
     <style amp-boilerplate>body {
         -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -117,7 +148,7 @@
     News Site
 </header>
 <article>
-    <h1>Why I love React.js?</h1>
+    <h1>Why I Love React.js?</h1>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula
         accumsan eu.</p>
