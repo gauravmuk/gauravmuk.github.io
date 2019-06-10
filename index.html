@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        console.log('1');
+        window._pcq = window._pcq || [];
+        _pcq.push(['APIReady', callbackOnSuccessFunction]);
+
+        function callbackOnSuccessFunction() {
+            _pcq.push(['triggerOptIn']);
+        }
+    </script>
     <script type="text/javascript">
         (function(p,u,s,h){
             p._pcq=p._pcq||[];
@@ -12,15 +21,6 @@
             h=u.getElementsByTagName('script')[0];
             h.parentNode.insertBefore(s,h);
         })(window,document);
-    </script>
-    <script>
-        console.log('1');
-        window._pcq = window._pcq || [];
-        _pcq.push(['APIReady', callbackOnSuccessFunction]);
-
-        function callbackOnSuccessFunction() {
-            _pcq.push(['triggerOptIn']);
-        }
     </script>
 
     <meta charset="utf-8"/>
