@@ -133,11 +133,15 @@ function onMessageReceivedSubscribe() {
      */
     self.registration.pushManager
         .subscribe({
-            userVisibleOnly: true
+            userVisibleOnly: true,
+            applicationServerKey: urlBase64ToUint8Array('BO7iB_SDKflr1IHztMpspxjyoWPOeeIwVIvSgI3gmZSL3TP46FCmSAQgDcBAAvT9FTroWAoExjaq7WgTOYq2VQM')
         })
         .then(() => {
             // IMPLEMENT: Forward the push subscription to your server here
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
+        })
+        .catch((e) => {
+            console.log(e.message);
         });
 }
 
