@@ -131,15 +131,7 @@ function onMessageReceivedSubscribe() {
           https://github.com/web-push-libs/web-push, convert the VAPID key to a
           UInt8 array and supply it to applicationServerKey
      */
-    self.registration.pushManager
-        .subscribe({
-            userVisibleOnly: true,
-            applicationServerKey: 'fake-demo-key',
-        })
-        .then(() => {
-            // IMPLEMENT: Forward the push subscription to your server here
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
-        });
+    console.log('Subscription Happened');
 }
 
 /**
