@@ -1,5 +1,5 @@
 !function() {
-    var jstz, tslib, IndexedDb = {}, detectBrowser = {}, amp = {};
+    var jstz, tslib, IndexedDb = {}, detectBrowser = {}, AMPCommandEnum = {}, amp = {};
     jstz = function() {
         var a = function() {
             'use strict';
@@ -1565,6 +1565,9 @@
             }
         });
     }), detectBrowser = function(exports, Bowser) {
+        Object.defineProperty(exports, '__esModule', {
+            value: !0
+        });
         var detectBrowser = {
             browser: Bowser.getParser(navigator.userAgent),
             name: function() {
@@ -1592,19 +1595,105 @@
                 });
             }
         };
-        return detectBrowser;
-    }(0, bowser), amp = function(exports) {
+        return exports.default = detectBrowser, exports;
+    }(detectBrowser, bowser), AMPCommandEnum = function(exports) {
+        Object.defineProperty(exports, '__esModule', {
+            value: !0
+        });
+        var AMPCommandEnum = {
+            AMP_SUBSCRIPTION_STATE: 'amp-web-push-subscription-state',
+            AMP_SUBSCRIBE: 'amp-web-push-subscribe',
+            AMP_UNSUBSCRIBE: 'amp-web-push-unsubscribe'
+        };
+        return exports.default = AMPCommandEnum, exports;
+    }(AMPCommandEnum), amp = function(exports, detectBrowser, tslib_1, AMPCommandEnum_1) {
         Object.defineProperty(exports, '__esModule', {
             value: !0
         });
         var amp = function() {
-            function amp() {}
-            return amp.listenToPostMessage = function() {
-                self.addEventListener('message', function() {});
+            function amp(config) {
+                this.subscriptionEndPoint = 'https://pushcrew.com/syncSubscriptionAction.php', this.config = config;
+            }
+            return amp.prototype.onMessageReceivedSubscriptionState = function() {
+                var _this = this, retrievedPushSubscription = null;
+                self.registration.pushManager.getSubscription().then(function(pushSubscription) {
+                    return retrievedPushSubscription = pushSubscription, pushSubscription ? self.registration.pushManager.permissionState(pushSubscription.options) : null;
+                }).then(function(permissionStateOrNull) {
+                    if (null == permissionStateOrNull) _this.broadcastReply(AMPCommandEnum_1.default.AMP_SUBSCRIPTION_STATE, !1); else {
+                        var isSubscribed = !!retrievedPushSubscription && 'granted' === permissionStateOrNull;
+                        _this.broadcastReply(AMPCommandEnum_1.default.AMP_SUBSCRIPTION_STATE, isSubscribed);
+                    }
+                });
+            }, amp.prototype.generateSubscriberId = function() {
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    var r = 16 * Math.random() | 0, v = 'x' == c ? r : 3 & r | 8;
+                    return v.toString(16);
+                }).replace(/-/g, '');
+            }, amp.prototype.makeQueryString = function(params) {
+                var queryString = '';
+                for (var param in params) params.hasOwnProperty(param) && (queryString += '&' + param + '=' + params[param]);
+                return queryString.substr(1);
+            }, amp.prototype.parseSubscription = function(subscription) {
+                var subscriptionData = subscription;
+                'string' == typeof subscription && (subscriptionData = JSON.parse(subscription));
+                var endpoint = subscriptionData.endpoint.split('/'), subscriptionId = endpoint[endpoint.length - 1], subscriptionEndPoint = endpoint.pop().join('/');
+                return {
+                    subscriptionId: subscriptionId,
+                    subscriptionEndPoint: subscriptionEndPoint,
+                    subscription: subscription
+                };
+            }, amp.prototype.generateSyncSubscriptionParameters = function(subscription, action) {
+                return void 0 === action && (action = 'insert'), this.makeQueryString(tslib_1.__assign({
+                    hash: this.config.hash,
+                    origin: this.config.origin,
+                    vapidPublicKey: this.config.vapidPublicKey,
+                    browserType: detectBrowser.name(),
+                    subscriberId: this.generateSubscriberId(),
+                    action: action
+                }, this.parseSubscription(subscription)));
+            }, amp.prototype.syncSubscription = function(subscription) {
+                fetch(this.subscriptionEndPoint + this.generateSyncSubscriptionParameters(subscription)).then(function(response) {
+                    return response.json();
+                });
+            }, amp.prototype.onMessageReceivedSubscribe = function() {
+                var _this = this;
+                self.registration.pushManager.subscribe({
+                    userVisibleOnly: !0,
+                    applicationServerKey: this.config.vapidPublicKey
+                }).then(function(subscription) {
+                    _this.syncSubscription(subscription), _this.broadcastReply(AMPCommandEnum_1.default.AMP_SUBSCRIBE, null);
+                });
+            }, amp.prototype.broadcastReply = function(command, payload) {
+                self.clients.matchAll().then(function(clients) {
+                    for (var i = 0; i < clients.length; i++) {
+                        var client = clients[i];
+                        client.postMessage({
+                            command: command,
+                            payload: payload
+                        });
+                    }
+                });
+            }, amp.prototype.listenToPostMessage = function() {
+                var _this = this;
+                self.addEventListener('message', function(event) {
+                    var command = event.data.command;
+                    switch (command) {
+                        case AMPCommandEnum_1.default.AMP_SUBSCRIPTION_STATE:
+                            _this.onMessageReceivedSubscriptionState();
+                            break;
+
+                        case AMPCommandEnum_1.default.AMP_SUBSCRIBE:
+                            _this.onMessageReceivedSubscribe();
+                            break;
+
+                        case AMPCommandEnum_1.default.AMP_UNSUBSCRIBE:
+                            break;
+                    }
+                });
             }, amp;
         }();
         return exports.default = amp, exports;
-    }(amp), function(jstz, IndexedDb, detectBrowser, amp) {
+    }(amp, detectBrowser, tslib, AMPCommandEnum), function(jstz, IndexedDb, detectBrowser, amp) {
         function syncChromeEncryptionKeys() {
             self.registration.pushManager.getSubscription().then(function(subscription) {
                 if (subscription) {
