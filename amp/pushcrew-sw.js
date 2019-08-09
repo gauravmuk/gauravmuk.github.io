@@ -1565,9 +1565,6 @@
             }
         });
     }), detectBrowser = function(exports, Bowser) {
-        Object.defineProperty(exports, '__esModule', {
-            value: !0
-        });
         var detectBrowser = {
             browser: Bowser.getParser(navigator.userAgent),
             name: function() {
@@ -1595,8 +1592,8 @@
                 });
             }
         };
-        return exports.default = detectBrowser, exports;
-    }(detectBrowser, bowser), AMPCommandEnum = function(exports) {
+        return detectBrowser;
+    }(0, bowser), AMPCommandEnum = function(exports) {
         Object.defineProperty(exports, '__esModule', {
             value: !0
         });
