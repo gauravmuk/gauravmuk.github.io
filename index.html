@@ -1,173 +1,225 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="HandheldFriendly" content="True"/>
+  <head>
+    <!-- Start VWO Smartcode (SPA) -->
+    <script type="text/javascript">
+      var _vwo_code = (function() {
+        var account_id = 168569,
+          settings_tolerance = 2000,
+          library_tolerance = 2500,
+          use_existing_jquery = false,
+          is_spa = 1,
+          /* DO NOT EDIT BELOW THIS LINE */
+          f = false,
+          d = document;
+        return {
+          use_existing_jquery: function() {
+            return use_existing_jquery;
+          },
+          library_tolerance: function() {
+            return library_tolerance;
+          },
+          finish: function() {
+            if (!f) {
+              f = true;
+              var a = d.getElementById("_vis_opt_path_hides");
+              if (a) a.parentNode.removeChild(a);
+            }
+          },
+          finished: function() {
+            return f;
+          },
+          load: function(a) {
+            var b = d.createElement("script");
+            b.src = a;
+            b.type = "text/javascript";
+            b.innerText;
+            b.onerror = function() {
+              _vwo_code.finish();
+            };
+            d.getElementsByTagName("head")[0].appendChild(b);
+          },
+          init: function() {
+            settings_timer = setTimeout(
+              "_vwo_code.finish()",
+              settings_tolerance
+            );
+            var a = d.createElement("style"),
+              b =
+                "body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}",
+              h = d.getElementsByTagName("head")[0];
+            a.setAttribute("id", "_vis_opt_path_hides");
+            a.setAttribute("type", "text/css");
+            if (a.styleSheet) a.styleSheet.cssText = b;
+            else a.appendChild(d.createTextNode(b));
+            h.appendChild(a);
+            this.load(
+              "//dev.visualwebsiteoptimizer.com/j.php?a=" +
+                account_id +
+                "&u=" +
+                encodeURIComponent(d.URL) +
+                "&f=" +
+                +is_spa +
+                "&r=" +
+                Math.random()
+            );
+            return settings_timer;
+          }
+        };
+      })();
+      _vwo_settings_timer = _vwo_code.init();
+    </script>
+    <!-- End VWO Smartcode (SPA) -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Playground"/>
-    <meta property="og:url" content="https://gauravmuk.github.io/index.html"/>
-    <meta property="og:site_name" content="Playground"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Playground"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Playground" />
+    <meta property="og:url" content="https://gauravmuk.github.io/index.html" />
+    <meta property="og:site_name" content="Playground" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Playground" />
 
-    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
 
     <link
-            rel="icon"
-            type="image/png"
-            href="/images/favicon-192x192.png"
-            sizes="192x192"
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-192x192.png"
+      sizes="192x192"
     />
 
     <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/images/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
     />
 
     <!-- title -->
     <title>
-        Playground
+      Playground
     </title>
     <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- rss -->
-</head>
-<body class="max-width mx-auto px3">
-<div class="content index my4">
-    <header id="header">
+  </head>
+  <body class="max-width mx-auto px3">
+    <div class="content index my4">
+      <header id="header">
         <a href="/">
-            <div id="logo" style="background-image: url(/images/logo.png);"></div>
+          <div id="logo" style="background-image: url(/images/logo.png);"></div>
 
-            <div id="title">
-                <h1>Playground</h1>
-            </div>
+          <div id="title">
+            <h1>Playground</h1>
+          </div>
         </a>
         <div id="nav">
-            <ul>
-                <li class="icon">
-                    <a href="#"><i class="fas fa-bars fa-2x"></i></a>
-                </li>
+          <ul>
+            <li class="icon">
+              <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+            </li>
 
-                <li><a href="/">Home</a></li>
+            <li><a href="/">Home</a></li>
 
-                <li><a href="/archives/">Writing</a></li>
+            <li><a href="/archives/">Writing</a></li>
 
-                <li><a href="/projects_url">Projects</a></li>
-            </ul>
+            <li><a href="/projects_url">Projects</a></li>
+          </ul>
         </div>
-    </header>
+      </header>
 
-    <section id="about">
+      <section id="about">
         <p>
-            Find me on
+          Find me on
 
-            <a class="icon" target="_blank" href="https://github.com/gauravmuk">
-                <i class="fab fa-github"></i
-                ><!--
-      ---></a
+          <a class="icon" target="_blank" href="https://github.com/gauravmuk">
+            <i class="fab fa-github"></i
             ><!--
+      ---></a
+          ><!--
     ---><!--
     --->,
 
-            <a class="icon" target="_blank" href="https://twitter.com/gauravmuk">
-                <i class="fab fa-twitter"></i
-                ><!--
-      ---></a
+          <a class="icon" target="_blank" href="https://twitter.com/gauravmuk">
+            <i class="fab fa-twitter"></i
             ><!--
+      ---></a
+          ><!--
     ---><!--
     --->,
 
-            <a class="icon" target="_blank" href="https://facebook.com/gauravmuk">
-                <i class="fab fa-facebook"></i
-                ><!--
-      ---></a
+          <a class="icon" target="_blank" href="https://facebook.com/gauravmuk">
+            <i class="fab fa-facebook"></i
             ><!--
+      ---></a
+          ><!--
     ---><!--
     --->,
 
-            <a class="icon" target="_blank" href="/">
-                <i class="fab fa-linkedin"></i
-                ><!--
-      ---></a
+          <a class="icon" target="_blank" href="/">
+            <i class="fab fa-linkedin"></i
             ><!--
+      ---></a
+          ><!--
     ---><!--
     --->
-            and
+          and
 
-            <a class="icon" target="_blank" href="mailto:93.gaurav@gmail.com">
-                <i class="fas fa-envelope"></i
-                ><!--
-      ---></a
+          <a class="icon" target="_blank" href="mailto:93.gaurav@gmail.com">
+            <i class="fas fa-envelope"></i
             ><!--
+      ---></a
+          ><!--
       ---><!--
     --->.
         </p>
-    </section>
+      </section>
 
-    <section id="writing">
+      <section id="writing">
         <span class="h1"><a href="/archives">Writing</a></span>
         <ul class="post-list">
-            <li class="post-item">
-                <div class="meta">
-                    <time datetime="2018-03-25T13:47:20.915Z" itemprop="datePublished"
-                    >2018-03-25
-                    </time
-                    >
-                </div>
+          <li class="post-item">
+            <div class="meta">
+              <time datetime="2018-03-25T13:47:20.915Z" itemprop="datePublished"
+                >2018-03-25
+              </time>
+            </div>
 
-                <span>
+            <span>
               <a class="" href="/2018/03/25/hexo-trial/">Hexo Trial</a>
             </span>
-            </li>
+          </li>
         </ul>
-    </section>
-</div>
+      </section>
+    </div>
 
-<footer id="footer">
-    <div class="footer-left">
+    <footer id="footer">
+      <div class="footer-left">
         Copyright &copy; 2018 Gaurav Nanda
-    </div>
-    <div class="footer-right">
+      </div>
+      <div class="footer-right">
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
+          <ul>
+            <li><a href="/">Home</a></li>
 
-                <li><a href="/archives/">Writing</a></li>
+            <li><a href="/archives/">Writing</a></li>
 
-                <li><a href="/projects_url">Projects</a></li>
-            </ul>
+            <li><a href="/projects_url">Projects</a></li>
+          </ul>
         </nav>
-    </div>
-</footer>
-<script>
-    const params = new URL(document.location).searchParams;
-    const hash = params.get('hash') || 'c746a6786890c4e74cb25498556803fc';
-    const env = params.get('env') || '';
-
-    (function(p,u,s,h){
-        p._pcq=p._pcq||[];
-        p._pcq.push(['_currentTime',Date.now()]);
-        s=u.createElement('script');
-        s.type='text/javascript';
-        s.async=true;
-        s.src=`https://cdn.pushcrew${env}.com/js/${hash}.js`;
-        h=u.getElementsByTagName('script')[0];
-        h.parentNode.insertBefore(s,h);
-    })(window,document);
-</script>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
 <!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css"/>
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css" />
 <link
-        rel="stylesheet"
-        href="/lib/justified-gallery/css/justifiedGallery.min.css"
+  rel="stylesheet"
+  href="/lib/justified-gallery/css/justifiedGallery.min.css"
 />
 
 <!-- jquery -->
