@@ -23,28 +23,21 @@
         window.VWO.trackLibPath = 'https://gauravmuk.github.io/track.js';
         window._vis_opt_lib = 'https://gauravmuk.github.io/vis_opt_gq.js';
     </script>
-    <!-- Start Visual Website Optimizer Synchronous Code -->
+    <!-- Start VWO Async Smartcode -->
     <script type='text/javascript'>
-        var _vis_opt_account_id = getParameterByName("testing");
-        console.log(_vis_opt_account_id);
-        var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-        document.write('<s' + 'cript src="' + _vis_opt_protocol +
-            'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
-            +encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
-    </script>
+        window._vwo_code = window._vwo_code || (function(){
+            var account_id=168569,
+                settings_tolerance=2000,
+                library_tolerance=2500,
+                use_existing_jquery=false,
+                is_spa=1,
+                hide_element='body',
 
-    <script type='text/javascript'>
-        if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +
-            'd5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
-        // if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above
+                /* DO NOT EDIT BELOW THIS LINE */
+                f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+                        settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
     </script>
-
-    <script type='text/javascript'>
-        if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
-            _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
-        }
-    </script>
-    <!-- End Visual Website Optimizer Synchronous Code -->
+    <!-- End VWO Async Smartcode -->
     <style>
         #abcd {
             visibility:hidden;
