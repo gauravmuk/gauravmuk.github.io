@@ -18,6 +18,10 @@
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
     </script>
+    <script>
+        window.VWO.trackLibPath = 'https://gauravmuk.github.io/track.js';
+        window._vis_opt_lib = 'https://gauravmuk.github.io/vis_opt_gq.js';
+    </script>
     <!-- Start Visual Website Optimizer Synchronous Code -->
     <script type='text/javascript'>
         var _vis_opt_account_id = getParameterByName("testing");
