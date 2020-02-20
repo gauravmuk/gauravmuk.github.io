@@ -14,185 +14,185 @@
  limitations under the License.
 -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html ⚡ lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="canonical" href="./article.html">
-    <link rel="shortcut icon" href="amp_favicon.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <link rel="canonical" href="./article.html" />
+    <link rel="shortcut icon" href="amp_favicon.png" />
 
     <title>News Article</title>
 
     <style amp-custom>
-        amp-web-push-widget button.subscribe {
+      amp-web-push-widget button.subscribe,
+        amp-web-push-widget button.unsubscribe {
             display: inline-flex;
+            width: 100%;
             align-items: center;
-            border-radius: 2px;
+            justify-content: center;
+            border-radius: 4px;
             border: 0;
             box-sizing: border-box;
             margin: 0;
-            padding: 10px 15px;
+            padding: 0 25px;
             cursor: pointer;
             outline: none;
-            font-size: 15px;
-            font-weight: 400;
-            background: #4A90E2;
+            font-size: 16px;
+            font-weight: 600;
+            background: #3D7CF5;
             color: white;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            height: 48px;
+            line-height: 48px;
         }
-
+ 
         amp-web-push-widget button.subscribe .subscribe-icon {
-            margin-right: 10px;
+            margin-right: 16px;
         }
-
-        amp-web-push-widget button.subscribe:active {
-            transform: scale(0.99);
-        }
-
+ 
         amp-web-push-widget button.unsubscribe {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 45px;
-            border: 0;
-            margin: 0;
-            cursor: pointer;
-            outline: none;
-            font-size: 15px;
-            font-weight: 400;
-            background: transparent;
-            color: #B1B1B1;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-
-        body {
-            width: auto;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: Tomato;
-            color: white;
-            font-size: 2em;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            padding: 0.5em;
-            background: white;
-            box-shadow: 0px 3px 5px grey;
-        }
-
-        p {
-            padding: 0.5em;
-            margin: 0.5em;
+            background-color: #fff;
+            border: 1px solid #D9DDE1;
+            color: #788290;
+            padding: 0 40px;
         }
     </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-web-push" src="https://cdn.ampproject.org/v0/amp-web-push-0.1.js"></script>
+    <script
+      async
+      custom-element="amp-analytics"
+      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-web-push"
+      src="https://cdn.ampproject.org/v0/amp-web-push-0.1.js"
+    ></script>
 
-    <style amp-boilerplate>body {
+    <style amp-boilerplate>
+      body {
         -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
 
-    @-webkit-keyframes -amp-start {
+      @-webkit-keyframes -amp-start {
         from {
-            visibility: hidden
+          visibility: hidden;
         }
         to {
-            visibility: visible
+          visibility: visible;
         }
-    }
+      }
 
-    @-moz-keyframes -amp-start {
+      @-moz-keyframes -amp-start {
         from {
-            visibility: hidden
+          visibility: hidden;
         }
         to {
-            visibility: visible
+          visibility: visible;
         }
-    }
+      }
 
-    @-ms-keyframes -amp-start {
+      @-ms-keyframes -amp-start {
         from {
-            visibility: hidden
+          visibility: hidden;
         }
         to {
-            visibility: visible
+          visibility: visible;
         }
-    }
+      }
 
-    @-o-keyframes -amp-start {
+      @-o-keyframes -amp-start {
         from {
-            visibility: hidden
+          visibility: hidden;
         }
         to {
-            visibility: visible
+          visibility: visible;
         }
-    }
+      }
 
-    @keyframes -amp-start {
+      @keyframes -amp-start {
         from {
-            visibility: hidden
+          visibility: hidden;
         }
         to {
-            visibility: visible
+          visibility: visible;
         }
-    }</style>
+      }
+    </style>
     <noscript>
-        <style amp-boilerplate>body {
-            -webkit-animation: none;
-            -moz-animation: none;
-            -ms-animation: none;
-            animation: none
-        }</style>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
     </noscript>
-</head>
-<body>
-<amp-web-push id="amp-web-push" layout="nodisplay"
-              helper-iframe-url="https://gauravmuk.github.io/amp/amp-helper-frame.html?appId=8818a6ca-d384-4da7-a0c2-9959511baa15"
-              permission-dialog-url="https://gauravmuk.github.io/amp/amp-permission-dialog.html?appId=8818a6ca-d384-4da7-a0c2-9959511baa15"
-              service-worker-url="https://gauravmuk.github.io/amp/pushcrew-sw.js"></amp-web-push>
+  </head>
+  <body>
+    <amp-web-push
+      id="amp-web-push"
+      layout="nodisplay"
+      helper-iframe-url="https://localhost/amp/amp-helper-frame.html"
+      permission-dialog-url="https://localhost/amp/amp-permission-dialog.html"
+      service-worker-url="https://localhost/amp/pushcrew-sw.js"
+    ></amp-web-push>
 
-<amp-web-push-widget visibility="unsubscribed" layout="fixed" width="245" height="45">
-    <button class="subscribe" on="tap:amp-web-push.subscribe">
+    <amp-web-push-widget
+      visibility="unsubscribed"
+      layout="fixed"
+      width="250"
+      height="48"
+    >
+      <button class="subscribe" on="tap:amp-web-push.subscribe">
         <amp-img
-                class="subscribe-icon"
-                width="24"
-                height="24"
-                layout="fixed"
-                src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3Vic2NyaWJlLWljb24iIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMS44NCAxOS44ODdIMS4yMnMtLjk0Ny0uMDk0LS45NDctLjk5NWMwLS45LjgwNi0uOTQ4LjgwNi0uOTQ4czMuMTctMS41MTcgMy4xNy0yLjYwOGMwLTEuMDktLjUyLTEuODUtLjUyLTYuMzA1czIuODUtNy44NyA2LjI2LTcuODdjMCAwIC40NzMtMS4xMzQgMS44NS0xLjEzNCAxLjMyNSAwIDEuOCAxLjEzNyAxLjggMS4xMzcgMy40MTMgMCA2LjI2IDMuNDE4IDYuMjYgNy44NyAwIDQuNDYtLjQ3NyA1LjIyLS40NzcgNi4zMSAwIDEuMDkgMy4xNzYgMi42MDcgMy4xNzYgMi42MDdzLjgxLjA0Ni44MS45NDdjMCAuODUzLS45OTYuOTk1LS45OTYuOTk1SDExLjg0ek04IDIwLjk3N2g3LjExcy0uNDkgMi45ODctMy41MyAyLjk4N1M4IDIwLjk3OCA4IDIwLjk3OHoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=">
+          class="subscribe-icon"
+          width="24"
+          height="24"
+          layout="fixed"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuNTI1MjUgMjRDNy45Njg3NyAyNCA2LjcwNjIxIDIyLjczODYgNi43MDYyMSAyMS4xODA5SDEyLjM0MzlDMTIuMzQ0MiAyMi43Mzg2IDExLjA4MTcgMjQgOS41MjUyNSAyNFpNMTkuMDUxMiAxOC4zNTQyQzE5LjA1MTIgMTkuMzk2NiAxOC4yMDU4IDE5LjQ2NTEgMTcuMTY0MSAxOS40NjUxSDEuODg2MTFDMC44NDQwMjQgMTkuNDY1MSAwIDE5LjM5NjUgMCAxOC4zNTQxVjE4LjE3NDVDMCAxNy40MjQ5IDAuNDQwMjI4IDE2Ljc4MyAxLjA3Mjc0IDE2LjQ3ODVMMS42NzE1NiAxMS4zMDk2QzEuNjcxNTYgNy41MjU1MSA0LjM0NzYzIDQuMzY3MTUgNy45MTAyMiAzLjYyMjAxVjEuNjE1MzNDNy45MTAyMiAwLjcyMzMwNCA4LjYzMzUyIDAgOS41MjU5OCAwQzEwLjQxOCAwIDExLjE0MTMgMC43MjMzMDQgMTEuMTQxMyAxLjYxNTMzVjMuNjIyMTZDMTQuNzAzOSA0LjM2NzE1IDE3LjM4IDcuNTI1MjIgMTcuMzggMTEuMzA5N0wxNy45Nzg4IDE2LjQ3OTRDMTguNjExMyAxNi43ODQzIDE5LjA1MTIgMTcuNDI1MSAxOS4wNTEyIDE4LjE3NDdWMTguMzU0MloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
+        >
         </amp-img>
         Subscribe to updates
-    </button>
-</amp-web-push-widget>
+      </button>
+    </amp-web-push-widget>
 
+    <!-- An unsubscription widget -->
+    <amp-web-push-widget
+      visibility="subscribed"
+      layout="fixed"
+      width="300"
+      height="48"
+    >
+      <button class="unsubscribe" on="tap:amp-web-push.unsubscribe">
+        Unsubscribe from updates
+      </button>
+    </amp-web-push-widget>
+    <header>
+      News Site
+    </header>
+    <article>
+      <h1>Why I Love React.js?</h1>
 
-<!-- An unsubscription widget -->
-<amp-web-push-widget visibility="subscribed" layout="fixed" width="230" height="45">
-    <button class="unsubscribe" on="tap:amp-web-push.unsubscribe">Unsubscribe from updates</button>
-</amp-web-push-widget>
-<header>
-    News Site
-</header>
-<article>
-    <h1>Why I Love React.js?</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas
+        tortor sapien, non tristique ligula accumsan eu.
+      </p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula
-        accumsan eu.</p>
-
-    <amp-img src="mountains.jpg" layout="responsive" width="266" height="150"></amp-img>
-
-
-</article>
-</body>
+      <amp-img
+        src="mountains.jpg"
+        layout="responsive"
+        width="266"
+        height="150"
+      ></amp-img>
+    </article>
+  </body>
 </html>
