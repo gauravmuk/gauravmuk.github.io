@@ -6937,8 +6937,11 @@ api = function ($pushcrew, globalConfig, detectBrowser, iframe, storageUtil, set
       }
     }
     function syncSubscriptionAndApiInit(newSubscription, response, segmentName) {
+      console.log(newSubscription);
       var stringifiedSubscription = JSON.stringify(newSubscription);
+      console.log('Triggering');
       globalConfig.internalConfig.subscribedToWebPushEvent.trigger();
+      console.log('Triggered');
       manageSubscription.syncSubscription(stringifiedSubscription, '', '', response.subscriptionId, response.endpoint, 'insert').then(function () {
         setSubscriberId();
         if (globalConfig._pushcrew.storedSubscriptionSuccessCallback) {
