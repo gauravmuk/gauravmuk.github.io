@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-PZ69KC3"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-91443369-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-91443369-1");
+<head>
+    <!-- Start VWO Async Smartcode -->
+    <script type="text/javascript">
+        window._vwo_code =
+            window._vwo_code ||
+            (function() {
+                var account_id = 168569,
+                    settings_tolerance = 2000,
+                    library_tolerance = 2500,
+                    use_existing_jquery = false,
+                    is_spa = 1,
+                    hide_element = "body",
+                    /* DO NOT EDIT BELOW THIS LINE */
+                    f = false,
+                    d = document,
+                    code = {
+                        use_existing_jquery: function() {
+                            return use_existing_jquery;
+                        },
+                        library_tolerance: function() {
+                            return library_tolerance;
+                        },
+                        finish: function() {
+                            if (!f) {
+                                f = true;
+                                var a = d.getElementById("_vis_opt_path_hides");
+                                if (a) a.parentNode.removeChild(a);
+                            }
+                        },
+                        finished: function() {
+                            return f;
+                        },
+                        load: function(a) {
+                            var b = d.createElement("script");
+                            b.src = a;
+                            b.type = "text/javascript";
+                            b.innerText;
+                            b.onerror = function() {
+                                _vwo_code.finish();
+                            };
+                            d.getElementsByTagName("head")[0].appendChild(b);
+                        },
+                        init: function() {
+                            window.settings_timer = setTimeout(
+                                "_vwo_code.finish()",
+                                settings_tolerance
+                            );
+                            var a = d.createElement("style"),
+                                b = hide_element ?
+                                hide_element +
+                                "{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}" :
+                                "",
+                                h = d.getElementsByTagName("head")[0];
+                            a.setAttribute("id", "_vis_opt_path_hides");
+                            a.setAttribute("type", "text/css");
+                            if (a.styleSheet) a.styleSheet.cssText = b;
+                            else a.appendChild(d.createTextNode(b));
+                            h.appendChild(a);
+                            this.load(
+                                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                                account_id +
+                                "&u=" +
+                                encodeURIComponent(d.URL) +
+                                "&f=" +
+                                +is_spa +
+                                "&r=" +
+                                Math.random()
+                            );
+                            return settings_timer;
+                        },
+                    };
+                window._vwo_settings_timer = code.init();
+                return code;
+            })();
     </script>
+    <!-- End VWO Async Smartcode -->
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Playground" />
     <meta property="og:url" content="https://gauravmuk.github.io/index.html" />
@@ -32,58 +91,50 @@
 
     <link rel="shortcut icon" href="/images/favicon.ico" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/images/favicon-192x192.png"
-      sizes="192x192"
-    />
+    <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
 
     <!-- title -->
     <title>
-      Playground
+        Playground
     </title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- rss -->
-  </head>
-  <body class="max-width mx-auto px3">
+</head>
+
+<body class="max-width mx-auto px3">
     <div class="content index my4">
-      <header id="header">
-        <a href="/">
-          <div id="logo" style="background-image: url(/images/logo.png);"></div>
+        <header id="header">
+            <a href="/">
+                <div id="logo" style="background-image: url(/images/logo.png);"></div>
 
-          <div id="title">
-            <h1>Playground</h1>
-          </div>
-        </a>
-        <div id="nav">
-          <ul>
-            <li class="icon">
-              <a href="#"><i class="fas fa-bars fa-2x"></i></a>
-            </li>
+                <div id="title">
+                    <h1>Playground</h1>
+                </div>
+            </a>
+            <div id="nav">
+                <ul>
+                    <li class="icon">
+                        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                    </li>
 
-            <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
 
-            <li><a href="/archives/">Writing</a></li>
+                    <li><a href="/archives/">Writing</a></li>
 
-            <li><a href="/projects_url">Projects</a></li>
-          </ul>
-        </div>
-      </header>
+                    <li><a href="/projects_url">Projects</a></li>
+                </ul>
+            </div>
+        </header>
 
-      <section id="about">
-        <p>
-          Find me on
+        <section id="about">
+            <p>
+                Find me on
 
-          <a class="icon" target="_blank" href="https://github.com/gauravmuk">
-            <i class="fab fa-github"></i
+                <a class="icon" target="_blank" href="https://github.com/gauravmuk">
+                    <i class="fab fa-github"></i
             ><!--
       ---></a
           ><!--
