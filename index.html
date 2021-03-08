@@ -2,6 +2,18 @@
 <html>
   <head>
     <title>Playground</title>
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "6d41e11e-430c-4a46-89af-8579583620a8",
+        });
+      });
+    </script>
     <script>
       (function (c, a) {
         if (!a.__SV) {
