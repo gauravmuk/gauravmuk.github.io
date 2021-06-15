@@ -6,7 +6,7 @@
       window._vwo_code =
         window._vwo_code ||
         (function () {
-          var account_id = 3000159,
+          var account_id = 568808,
             settings_tolerance = 2000,
             library_tolerance = 2500,
             use_existing_jquery = false,
@@ -75,34 +75,6 @@
         })();
     </script>
     <!-- End VWO Async SmartCode -->
-    <script type="text/javascript">
-      (function (t, e, a, l, i, u, m, j, s) {
-        m = function (o, p, q) {
-          j.q.push([o, p, q]);
-        };
-        j = u[i] = {
-          q: [],
-          config: function (n, d) {
-            m("config", n, d);
-          },
-          track: function (n, d) {
-            m("track", n, d);
-          },
-          debug: function (n) {
-            m("debug", n);
-          },
-        };
-        s = function () {
-          u[i] = Tealium(j.q);
-        };
-        j.config("init", [t, e, a, l]);
-        if (u.Tealium && u.TEAL && u.TEAL[t + "/" + e + "/" + l]) {
-          s();
-        } else {
-          j.callback = s;
-        }
-      })("wingify", "main", "prod", "p56koq", "tealium", window);
-    </script>
   </head>
 
   <body class="max-width mx-auto px3">
