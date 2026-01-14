@@ -2,34 +2,34 @@ import { Cpu, Database, Globe, Layout, Server, Shield, Code, Terminal, BarChart 
 
 const skillCategories = [
   {
-    title: "Engineering Leadership",
+    title: "Leadership & Execution",
     icon: <Shield className="h-6 w-6" />,
-    skills: ["Team Scaling (55 to 110)", "Hiring Strategy", "Performance Management", "OKRs", "Engineering Culture", "Mentorship", "Budgeting"]
+    skills: ["Managing Managers", "Team Scaling (55→110)", "Mission/Vision/Roadmap", "Stakeholder Management", "OKRs", "Risk Mitigation", "Delivery Outcomes"]
   },
   {
-    title: "Backend & Architecture",
+    title: "Backend & Systems",
     icon: <Server className="h-6 w-6" />,
-    skills: ["Node.js", "Go", "Python", "Microservices", "Event-Driven Architecture", "API Design", "Distributed Systems", "NestJS"]
+    skills: ["Node.js", "Go", "Python", "TypeScript", "Microservices", "System Design", "Distributed Systems", "SDK Design", "Scalability"]
   },
   {
-    title: "Infrastructure & DevOps",
+    title: "Cloud & Infrastructure",
     icon: <Globe className="h-6 w-6" />,
-    skills: ["AWS", "Docker/Containers", "Kubernetes", "Terraform", "CI/CD", "SOC-2 Compliance", "ISO 27001", "Cost Optimization"]
+    skills: ["Docker", "Kubernetes", "AWS", "GCP", "Kafka", "RabbitMQ", "Containerisation", "Cost Optimization", "Reliability Engineering"]
   },
   {
-    title: "Frontend Technologies",
+    title: "Frontend & Web",
     icon: <Layout className="h-6 w-6" />,
-    skills: ["React.js", "AngularJS", "HTML5/CSS3", "SPA Architecture", "Web Push", "Mobile Web"]
+    skills: ["React.js", "Vue.js", "TypeScript", "HTML5/CSS3", "SPA Architecture", "Web Performance", "Mobile Web"]
   },
   {
-    title: "Data & AI",
+    title: "Data & Databases",
     icon: <Database className="h-6 w-6" />,
-    skills: ["Machine Learning", "AI Integration", "Real-time Processing", "Sentiment Analysis", "Data Pipelines", "PostgreSQL", "Redis"]
+    skills: ["PostgreSQL", "MongoDB", "Redis", "Real-time Processing", "AI/ML Integration", "Sentiment Analysis", "Data Pipelines"]
   },
   {
-    title: "Product & Process",
+    title: "Process & Delivery",
     icon: <BarChart className="h-6 w-6" />,
-    skills: ["Agile/Scrum", "A/B Testing", "DORA Metrics", "Incident Response", "Technical Strategy", "Customer Success"]
+    skills: ["Agile/Scrum/Kanban", "DORA Metrics", "SOC-2", "ISO 27001", "Technical Debt Reduction", "Cross-Functional Delivery"]
   }
 ];
 

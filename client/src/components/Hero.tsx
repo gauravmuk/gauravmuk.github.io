@@ -36,17 +36,17 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">LEADERSHIP.</span>
             </motion.h1>
             
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light border-l-4 border-primary pl-6 space-y-4"
             >
               <p>
-                I'm <span className="font-bold text-foreground">Gaurav Nanda</span>, a seasoned Engineering Leader, Manager, and Product Evangelist with 14+ years of experience.
+                I'm <span className="font-bold text-foreground">Gaurav Nanda</span>—an engineering leader with 12+ years scaling teams and systems. I've grown organizations from 55 to 110+ engineers and improved uptime from 95% to 99.995%.
               </p>
               <p className="text-lg text-muted-foreground/80">
-                I bridge the gap between technical complexity and business value, building high-performing teams and scalable products that define categories.
+                I write code (Node.js, Go, Python, TypeScript), architect systems (Docker, Kubernetes, microservices), and deliver measurable outcomes. Technical depth meets execution velocity.
               </p>
             </motion.div>
             
@@ -95,29 +95,28 @@ export default function Hero() {
                 <div className="flex gap-2">
                   <span className="text-primary">➜</span>
                   <span className="text-accent">~</span>
-                  <span>whoami</span>
+                  <span>cat impact.json</span>
                 </div>
                 <div className="text-muted-foreground pl-4">
-                  "Engineering Leader"<br/>
-                  "Product Evangelist"<br/>
-                  "Strategic Thinker"
+                  &#123;<br/>
+                  &nbsp;&nbsp;"team_scaling": "55 → 110 engineers",<br/>
+                  &nbsp;&nbsp;"uptime": "95% → 99.995%",<br/>
+                  &nbsp;&nbsp;"cost_reduction": "35%",<br/>
+                  &nbsp;&nbsp;"load_time_improvement": "63%"<br/>
+                  &#125;
                 </div>
-                
+
                 <div className="flex gap-2">
                   <span className="text-primary">➜</span>
                   <span className="text-accent">~</span>
-                  <span>cat core_values.json</span>
+                  <span>ls -la tech_stack/</span>
                 </div>
                 <div className="text-muted-foreground pl-4">
-                  [<br/>
-                  &nbsp;&nbsp;"People First Leadership",<br/>
-                  &nbsp;&nbsp;"Product-Led Growth",<br/>
-                  &nbsp;&nbsp;"Operational Excellence",<br/>
-                  &nbsp;&nbsp;"Technical Scalability",<br/>
-                  &nbsp;&nbsp;"Customer Obsession"<br/>
-                  ]
+                  Node.js | Go | Python<br/>
+                  Docker | Kubernetes | AWS<br/>
+                  Kafka | Redis | PostgreSQL
                 </div>
-                
+
                 <div className="flex gap-2">
                   <span className="text-primary">➜</span>
                   <span className="text-accent">~</span>

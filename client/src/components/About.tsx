@@ -27,29 +27,29 @@ export default function About() {
           
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed">
             <p>
-              I am an <span className="font-bold bg-primary/20 px-1">Engineering Leader, Manager, and Product Evangelist</span> who believes that great software is built at the intersection of technical excellence and deep customer empathy. With over 14 years of experience, I don't just manage teams; I cultivate cultures of innovation where engineering fuels product growth.
+              <span className="font-bold bg-primary/20 px-1">Engineering leader with 12+ years building and scaling high-performing teams.</span> I've grown engineering organizations from 55 to 110+ engineers, improved system reliability from 95% to 99.995% uptime, and delivered complex cross-functional initiatives including SOC-2 and ISO certifications.
             </p>
-            
+
             <p>
-              Currently, as <span className="font-bold">VP of Engineering at JustCall & SaaS Labs</span>, I lead a 110+ engineer organization. My role transcends traditional engineering management—I partner closely with product and business leaders to define strategy, ensuring our technical roadmap directly accelerates our business goals, from AI-driven features to global infrastructure scaling.
+              As <span className="font-bold">VP of Engineering at JustCall & SaaS Labs</span>, I lead architectural strategy and technical execution. I architected container migrations that reduced load times by 63% and infrastructure costs by 35%. I introduced <span className="font-bold">JustCall AI</span>—real-time transcription, sentiment analysis, AI-driven coaching—now contributing 5% of MRR.
             </p>
-            
+
             <p>
-              My journey through leadership roles at <span className="font-bold">Forto</span> and <span className="font-bold">VWO</span> has taught me that scaling systems is easy, but scaling teams and culture is the real challenge. I specialize in building autonomous, high-velocity teams that take ownership of their impact.
+              <span className="font-bold">I'm a hands-on technical leader who codes.</span> I work with Node.js, Go, Python, TypeScript, Docker, Kubernetes, and build systems that scale. At VWO, I built SDKs in 8 languages for 500+ engineering teams and scaled VWO Engage to handle 2 billion monthly notifications. I've shipped 5 open-source libraries including <span className="font-bold">across-tabs</span> (1,700+ GitHub stars).
             </p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="border-l-2 border-primary pl-4">
-                <h4 className="font-bold font-mono text-xl mb-2">Leadership Philosophy</h4>
+                <h4 className="font-bold font-mono text-xl mb-2">Execution & Delivery</h4>
                 <p className="text-muted-foreground text-sm">
-                  "Empower teams with context, not control. Great leaders create environments where engineers can solve business problems, not just write code."
+                  "Ship fast, measure impact, iterate relentlessly. I balance delivery velocity with long-term technical sustainability and measurable business outcomes."
                 </p>
               </div>
-              
+
               <div className="border-l-2 border-primary pl-4">
-                <h4 className="font-bold font-mono text-xl mb-2">Product Vision</h4>
+                <h4 className="font-bold font-mono text-xl mb-2">Technical Leadership</h4>
                 <p className="text-muted-foreground text-sm">
-                  "Technology is the vehicle, but value is the destination. I advocate for engineering that is deeply aligned with user needs and market opportunities."
+                  "Great leaders stay technical. I write code, review architecture, debug production issues, and mentor engineers on system design and scalability."
                 </p>
               </div>
             </div>

@@ -3,41 +3,53 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "JustCall IQ (AI/ML)",
-    description: "Real-time meeting transcription, sentiment analysis, and data-driven coaching system. Contributes to 5% of current MRR.",
-    tech: ["AI/ML", "Real-time Processing", "Sentiment Analysis", "Python"],
+    title: "JustCall AI",
+    description: "Real-time meeting transcription, sentiment analysis, and AI-driven coaching system. Architected scalable ML pipeline processing thousands of concurrent calls. Contributes 5% of current MRR.",
+    tech: ["AI/ML", "Real-time Processing", "Python", "Microservices"],
     stats: { label: "Revenue Impact", value: "5% MRR" }
   },
   {
+    title: "JustCall AI Voice Agent",
+    description: "AI-powered voice agent for automated customer interactions. Built NLP pipeline for intent recognition and response generation with sub-second latency.",
+    tech: ["AI/ML", "Voice AI", "NLP", "Go"],
+    stats: { label: "Latency", value: "<1s" }
+  },
+  {
+    title: "Container Migration & Cost Optimization",
+    description: "Architected and led migration from VMs to containerised infrastructure. Reduced load times by 63%, infrastructure costs by 35%, and enabled global data centre expansion.",
+    tech: ["Docker", "Kubernetes", "Infrastructure", "Cost Optimization"],
+    stats: { label: "Cost Savings", value: "35%" }
+  },
+  {
+    title: "Platform Reliability Engineering",
+    description: "Improved system uptime from 95% to 99.995% through architectural improvements, monitoring, and SLO implementation. Increased G2 product score to 4.3.",
+    tech: ["Reliability", "Monitoring", "SLOs", "Distributed Systems"],
+    stats: { label: "Uptime", value: "99.995%" }
+  },
+  {
     title: "VWO FullStack SDKs",
-    description: "Created SDKs in 8 different languages enabling server-level Feature Rollout and A/B Testing. Utilized by 500+ engineering teams worldwide.",
-    tech: ["Polyglot Programming", "SDK Design", "Server-side Testing"],
+    description: "Led development of SDKs in 8 languages (JavaScript, Python, Java, Ruby, PHP, Go, C#, Node.js) for server-side A/B testing. Designed unified architecture ensuring consistency across 500+ engineering teams globally.",
+    tech: ["Polyglot Programming", "SDK Design", "Architecture"],
     stats: { label: "Adoption", value: "500+ Teams" }
   },
   {
+    title: "VWO Engage - High-Scale Notification Platform",
+    description: "Built from ground up and scaled to 20 engineers. Handles 2 billion monthly Web Push Notifications with 10% MoM growth. Architected distributed queue system with Kafka and Redis. Contributes 10% of company revenue.",
+    tech: ["Kafka", "Redis", "Node.js", "Distributed Systems"],
+    stats: { label: "Scale", value: "2B/mo" }
+  },
+  {
+    title: "Browser-Side Ingestion Optimization",
+    description: "Redesigned visitor journey visualization by offloading CPU-intensive tasks from servers to browsers. Reduced infrastructure costs by 90% while improving data accuracy and real-time processing.",
+    tech: ["JavaScript", "Performance", "Edge Computing"],
+    stats: { label: "Cost Savings", value: "90%" }
+  },
+  {
     title: "across-tabs",
-    description: "Open-source library for cross-tab communication. Facilitated hiring and garnered significant community attention.",
+    description: "Open-source JavaScript library for cross-tab communication using Browser APIs. Enables real-time data sync across browser tabs. Used in production by multiple companies.",
     tech: ["JavaScript", "Open Source", "Browser API"],
     stats: { label: "GitHub Stars", value: "1.7k+" },
     link: "https://github.com/wingify/across-tabs"
-  },
-  {
-    title: "VWO Engage",
-    description: "Developed from ground up and scaled to 20 engineers. Enables marketing teams to engage audiences via Web Push Notifications.",
-    tech: ["Web Push", "Scalability", "Team Building"],
-    stats: { label: "Revenue", value: "~10%" }
-  },
-  {
-    title: "Notification Infrastructure",
-    description: "Expanded infrastructure to send 2 billion monthly notifications with consistent 10% month-over-month growth.",
-    tech: ["High Scale", "Distributed Systems", "Infrastructure"],
-    stats: { label: "Volume", value: "2B/mo" }
-  },
-  {
-    title: "Ingestion Module Optimization",
-    description: "Enhanced visitor journey visualization ingestion, reducing infrastructure costs by 90% through CPU task offloading to browsers.",
-    tech: ["Performance", "Cost Optimization", "Edge Computing"],
-    stats: { label: "Cost Savings", value: "90%" }
   },
   {
     title: "Flappy Ball (JS13k)",

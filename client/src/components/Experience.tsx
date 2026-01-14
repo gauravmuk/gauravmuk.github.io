@@ -8,56 +8,58 @@ const experiences = [
     company: "JustCall & SaaS Labs",
     role: "VP - Engineering",
     period: "Apr 2022 - Present",
-    location: "New Delhi, India",
-    description: "Leading a 110-engineer team focusing on B2B Sales Enablement. Responsible for JustCall, Helpwise, AI & Incubation Projects.",
+    location: "Remote",
+    description: "Leading 110-engineer organisation across JustCall & Helpwise, managing multiple engineering managers and scaling teams while driving complex cross-functional initiatives.",
     achievements: [
-      "Introduced JustCall IQ (AI/ML), contributing to 5% of current MRR through real-time transcription & sentiment analysis.",
-      "Scaled team from 55 to 110 engineers, reducing hiring time from 8 weeks to 3 weeks via automation.",
-      "Led SOC-2 Type 1 & ISO 27001:2013 Certification efforts.",
-      "Migrated to Containers, cutting load time by 63% and costs by 35%.",
-      "Improved uptime from 95% to 99.995%, boosting G2 product score to 4.3.",
-      "Enhanced developer satisfaction by 50% by introducing Go & Node.js."
+      "Team Leadership & Growth: Led 110-engineer organisation, scaling from 55 to 110 engineers across multiple product lines",
+      "Cross-Functional Delivery: Drove SOC-2 Type 1 & ISO 27001:2013 certification, enabling mid-market expansion",
+      "System Reliability & Scalability: Improved uptime from 95% to 99.995%, increasing G2 product score to 4.3; established measurable SLOs",
+      "Architectural Strategy: Led container migration reducing load times 63% and infrastructure costs 35%; architected global data centre expansion",
+      "Technical Debt Reduction: Introduced Go & Node.js to modernise codebase, improving developer satisfaction by 50%",
+      "Mentorship & Culture: Introduced OKRs for engineering CSAT; reduced hiring cycle from 8 weeks to 3 weeks through automation",
+      "Innovation with Delivery Balance: Launched JustCall AI (real-time transcription, sentiment analysis, AI coaching) contributing 5% of MRR"
     ],
-    tags: ["Engineering Leadership", "AI/ML", "System Design", "SOC-2", "Cost Optimization"]
+    tags: ["Engineering Leadership", "AI/ML", "System Design", "SOC-2", "Scalability", "Go", "Node.js"]
   },
   {
-    company: "Forto",
+    company: "Forto GmbH",
     role: "Engineering Manager",
     period: "Aug 2021 - Jan 2022",
     location: "Berlin, Germany",
-    description: "Led customer onboarding and platform integration initiatives for a leading digital freight forwarder.",
+    description: "Led 5-engineer team delivering customer onboarding platform for digital freight forwarding operations.",
     achievements: [
-      "Increased customer retention by 5% and lowered ramp-up time by 15%.",
-      "Revamped Frontend Hiring process, improving hiring funnel by 30%.",
-      "Increased DORA metric MTTR by 15% through 'Failure Friday' incident response training."
+      "Delivery & Risk Management: Led team delivering customer onboarding platform; increased retention by 5% and reduced ramp-up time by 15%",
+      "Operational Excellence: Improved DORA metric MTTR by 15% through Failure Friday initiative for incident response training",
+      "Process Improvement: Revamped frontend hiring process achieving 30% improvement in hiring funnel efficiency"
     ],
-    tags: ["Team Leadership", "Hiring Strategy", "DORA Metrics", "NestJS", "React.js"]
+    tags: ["Team Leadership", "DORA Metrics", "Hiring Strategy", "NestJS", "React.js"]
   },
   {
     company: "VWO (Wingify)",
-    role: "Associate Director - Engineering",
+    role: "Associate Director of Engineering",
     period: "Jun 2015 - Jul 2021",
     location: "New Delhi, India",
-    description: "Responsible for building VWO, Engineering Culture, Hiring & Open Source. Rose from Senior Engineer to Associate Director.",
+    description: "Built VWO platform, engineering culture, hiring & open source. Rose from Senior Engineer to Associate Director over 6 years.",
     achievements: [
-      "Led creation of VWO FullStack SDKs in 8 languages, used by 500+ engineering teams.",
-      "Developed VWO Engage from scratch, scaling to 20 engineers and ~10% of revenue.",
-      "Expanded infrastructure to handle 2 billion monthly notifications with 10% MoM growth.",
-      "Reduced infrastructure costs by 90% for ingestion module via CPU task offloading.",
-      "Released 5 open-source libraries, including 'across-tabs' (1700+ GitHub stars)."
+      "Scalable Systems Delivery: Built and scaled VWO Engage from ground up (5 to 20 engineers), handling 2 billion monthly notifications with 10% MoM growth; contributes 10% of company revenue",
+      "Architectural Consistency: Led development of VWO FullStack SDKs in 8 languages, ensuring architectural consistency across 500+ engineering teams globally",
+      "Technical Debt & Simplification: Reduced infrastructure costs by 90% by offloading CPU tasks to browsers; stabilised WYSIWYG Editor with SPA support increasing conversions by 15%",
+      "Cross-Team Initiatives: Pioneered Third Party Integrations initiative resulting in 33 integrations; led codebase integration of Navilytics acquisition",
+      "Team Development: Mentored engineers across multiple teams; released 5 open-source libraries including 'across-tabs' (1,700+ GitHub stars)",
+      "Stakeholder Alignment: Spearheaded feature roadmap and prioritised customer bug resolutions ensuring steady revenue stream aligned with business objectives"
     ],
-    tags: ["Scalability", "Open Source", "SDK Design", "Infrastructure", "High Volume Systems"]
+    tags: ["Scalability", "Open Source", "SDK Design", "Infrastructure", "JavaScript", "Python"]
   },
   {
-    company: "PayU Payments",
+    company: "PayU Payments Pvt. Ltd.",
     role: "Software Engineer",
     period: "Jan 2015 - Jun 2015",
-    location: "New Delhi, India",
-    description: "Fintech development focused on merchant experience.",
+    location: "Gurugram, India",
+    description: "Fintech development focused on merchant experience and payment gateway integration.",
     achievements: [
-      "Developed Merchant Onboarding & Dashboard, reducing onboarding time by 50%."
+      "Developed Merchant Onboarding & Dashboard reducing onboarding time by 50% and improving customer experience"
     ],
-    tags: ["Fintech", "Productivity", "Dashboard"]
+    tags: ["Fintech", "Productivity", "Dashboard", "Payments"]
   },
   {
     company: "Compro Technologies",
