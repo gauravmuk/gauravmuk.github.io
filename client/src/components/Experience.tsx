@@ -6,33 +6,36 @@ import { Button } from "@/components/ui/button";
 const experiences = [
   {
     company: "JustCall & SaaS Labs",
-    role: "VP - Engineering",
+    role: "Head of AI & VP - Engineering",
     period: "Apr 2022 - Present",
-    location: "Remote",
-    description: "Leading 110-engineer organisation across JustCall & Helpwise, managing multiple engineering managers and scaling teams while driving complex cross-functional initiatives.",
+    location: "Hybrid (US/India)",
+    description: "Leading 110-engineer organisation across JustCall & Helpwise. Managing multiple engineering managers while driving AI innovation, architectural strategy, and 4x ARR growth.",
     achievements: [
-      "Team Leadership & Growth: Led 110-engineer organisation, scaling from 55 to 110 engineers across multiple product lines",
-      "Cross-Functional Delivery: Drove SOC-2 Type 1 & ISO 27001:2013 certification, enabling mid-market expansion",
+      "Executive Impact: Drove 4x ARR growth ($10M → $40M) and 15pp NRR improvement in 18 months by architecting scalable systems, launching AI products, and building high-performance engineering teams",
+      "AI Leadership: Led JustCall AI Voice Agent initiative from 0 to $1M ARR in 6 months as Head of AI, driving product-market fit and go-to-market strategy",
+      "AI Innovation with Delivery Balance: Launched JustCall AI (real-time transcription, sentiment analysis, AI-driven coaching) contributing 20% of MRR while maintaining delivery commitments",
+      "GTM Enablement: Built enablement function for Go-to-Market teams—launched LMS, documentation platforms, AI-powered phone support for sales & support, internal chatbots, and red team agents to strengthen security posture",
+      "Team Leadership & Growth: Led 110-engineer organisation, scaling from 55 to 110 engineers; managing multiple engineering managers across product lines",
+      "Cross-Functional Delivery: Drove complex initiatives including SOC-2 Type 2, PCI DSS, GDPR, ISO 27001:2022, and STAR Level 1 certifications, enabling mid-market expansion",
       "System Reliability & Scalability: Improved uptime from 95% to 99.995%, increasing G2 product score to 4.3; established measurable SLOs",
       "Architectural Strategy: Led container migration reducing load times 63% and infrastructure costs 35%; architected global data centre expansion",
       "Technical Debt Reduction: Introduced Go & Node.js to modernise codebase, improving developer satisfaction by 50%",
-      "Mentorship & Culture: Introduced OKRs for engineering CSAT; reduced hiring cycle from 8 weeks to 3 weeks through automation",
-      "Innovation with Delivery Balance: Launched JustCall AI (real-time transcription, sentiment analysis, AI coaching) contributing 5% of MRR"
+      "Mentorship & Culture: Introduced OKRs for engineering CSAT; reduced hiring cycle from 8 weeks to 3 weeks through automation"
     ],
-    tags: ["Engineering Leadership", "AI/ML", "System Design", "SOC-2", "Scalability", "Go", "Node.js"]
+    tags: ["AI Leadership", "Revenue Growth", "Engineering Leadership", "SOC-2", "PCI DSS", "Go", "Node.js", "AI/ML"]
   },
   {
     company: "Forto GmbH",
     role: "Engineering Manager",
     period: "Aug 2021 - Jan 2022",
     location: "Berlin, Germany",
-    description: "Led 5-engineer team delivering customer onboarding platform for digital freight forwarding operations.",
+    description: "Led 5-engineer team delivering customer onboarding platform with cross-team coordination across product, design, and operations for digital freight forwarding.",
     achievements: [
-      "Delivery & Risk Management: Led team delivering customer onboarding platform; increased retention by 5% and reduced ramp-up time by 15%",
-      "Operational Excellence: Improved DORA metric MTTR by 15% through Failure Friday initiative for incident response training",
+      "Delivery & Risk Management: Led team delivering customer onboarding platform with cross-team coordination; increased retention by 5% and reduced ramp-up time by 15%",
+      "Operational Excellence: Improved DORA metric MTTR by 15% through Failure Friday initiative, creating safe environment for incident response training",
       "Process Improvement: Revamped frontend hiring process achieving 30% improvement in hiring funnel efficiency"
     ],
-    tags: ["Team Leadership", "DORA Metrics", "Hiring Strategy", "NestJS", "React.js"]
+    tags: ["Team Leadership", "DORA Metrics", "Cross-Functional", "NestJS", "React.js"]
   },
   {
     company: "VWO (Wingify)",
@@ -44,7 +47,7 @@ const experiences = [
       "Scalable Systems Delivery: Built and scaled VWO Engage from ground up (5 to 20 engineers), handling 2 billion monthly notifications with 10% MoM growth; contributes 10% of company revenue",
       "Architectural Consistency: Led development of VWO FullStack SDKs in 8 languages, ensuring architectural consistency across 500+ engineering teams globally",
       "Technical Debt & Simplification: Reduced infrastructure costs by 90% by offloading CPU tasks to browsers; stabilised WYSIWYG Editor with SPA support increasing conversions by 15%",
-      "Cross-Team Initiatives: Pioneered Third Party Integrations initiative resulting in 33 integrations; led codebase integration of Navilytics acquisition",
+      "Cross-Team Initiatives: Drove cross-functional coordination across engineering, product, and partnerships to pioneer Third Party Integrations initiative resulting in 33 integrations; led codebase integration of Navilytics acquisition",
       "Team Development: Mentored engineers across multiple teams; released 5 open-source libraries including 'across-tabs' (1,700+ GitHub stars)",
       "Stakeholder Alignment: Spearheaded feature roadmap and prioritised customer bug resolutions ensuring steady revenue stream aligned with business objectives"
     ],

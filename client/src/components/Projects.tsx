@@ -3,28 +3,28 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "JustCall AI",
-    description: "Real-time meeting transcription, sentiment analysis, and AI-driven coaching system. Architected scalable ML pipeline processing thousands of concurrent calls. Contributes 5% of current MRR.",
-    tech: ["AI/ML", "Real-time Processing", "Python", "Microservices"],
-    stats: { label: "Revenue Impact", value: "5% MRR" }
-  },
-  {
     title: "JustCall AI Voice Agent",
-    description: "AI-powered voice agent for automated customer interactions. Built NLP pipeline for intent recognition and response generation with sub-second latency.",
-    tech: ["AI/ML", "Voice AI", "NLP", "Go"],
-    stats: { label: "Latency", value: "<1s" }
+    description: "Led AI Voice Agent initiative from 0 to $1M ARR in 6 months as Head of AI. Built NLP pipeline for intent recognition, response generation, and voice synthesis. Drove product-market fit and go-to-market strategy.",
+    tech: ["AI/ML", "Voice AI", "NLP", "Go", "Python"],
+    stats: { label: "ARR Growth", value: "0→$1M" }
   },
   {
-    title: "Container Migration & Cost Optimization",
-    description: "Architected and led migration from VMs to containerised infrastructure. Reduced load times by 63%, infrastructure costs by 35%, and enabled global data centre expansion.",
-    tech: ["Docker", "Kubernetes", "Infrastructure", "Cost Optimization"],
-    stats: { label: "Cost Savings", value: "35%" }
+    title: "JustCall AI Platform",
+    description: "Real-time meeting transcription, sentiment analysis, and AI-driven coaching system. Architected scalable ML pipeline processing thousands of concurrent calls. Now contributes 20% of company MRR.",
+    tech: ["AI/ML", "Real-time Processing", "Python", "Microservices"],
+    stats: { label: "Revenue Impact", value: "20% MRR" }
   },
   {
-    title: "Platform Reliability Engineering",
-    description: "Improved system uptime from 95% to 99.995% through architectural improvements, monitoring, and SLO implementation. Increased G2 product score to 4.3.",
-    tech: ["Reliability", "Monitoring", "SLOs", "Distributed Systems"],
-    stats: { label: "Uptime", value: "99.995%" }
+    title: "4x ARR Growth & Platform Scaling",
+    description: "Drove 4x ARR growth ($10M → $40M) and 15pp NRR improvement in 18 months. Led container migration (63% faster, 35% cost reduction), improved uptime from 95% to 99.995%, and architected for global expansion.",
+    tech: ["System Architecture", "Docker", "Kubernetes", "SRE"],
+    stats: { label: "ARR Growth", value: "4x" }
+  },
+  {
+    title: "GTM Enablement Platform",
+    description: "Built enablement function for Go-to-Market teams. Launched LMS, documentation platforms, AI-powered phone support for sales & support, internal chatbots, and red team agents for security testing.",
+    tech: ["AI/ML", "LMS", "Documentation", "Security"],
+    stats: { label: "Platforms", value: "5+" }
   },
   {
     title: "VWO FullStack SDKs",
