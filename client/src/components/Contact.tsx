@@ -5,19 +5,38 @@ import { Linkedin, Mail, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
+const WEB3FORMS_ACCESS_KEY = "19486573-4a85-4944-8948-99db7b3af011";
+
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast.success("Message sent successfully!");
+        form.reset();
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch {
+      toast.error("Something went wrong. Please try again later.");
+    } finally {
       setIsSubmitting(false);
-      toast.success("Message sent successfully!");
-      (e.target as HTMLFormElement).reset();
-    }, 1500);
+    }
   };
 
   return (
@@ -77,20 +96,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-bold font-mono uppercase">Name</label>
-                  <Input 
-                    id="name" 
-                    required 
-                    placeholder="John Doe" 
+                  <Input
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="John Doe"
                     className="rounded-none border-border focus-visible:ring-primary h-12 bg-background"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-bold font-mono uppercase">Email</label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    required 
-                    placeholder="john@example.com" 
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="john@example.com"
                     className="rounded-none border-border focus-visible:ring-primary h-12 bg-background"
                   />
                 </div>
@@ -98,20 +119,22 @@ export default function Contact() {
               
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-bold font-mono uppercase">Subject</label>
-                <Input 
-                  id="subject" 
-                  required 
-                  placeholder="Project Inquiry" 
+                <Input
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="Project Inquiry"
                   className="rounded-none border-border focus-visible:ring-primary h-12 bg-background"
                 />
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-bold font-mono uppercase">Message</label>
-                <Textarea 
-                  id="message" 
-                  required 
-                  placeholder="Tell me about your project..." 
+                <Textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell me about your project..."
                   className="rounded-none border-border focus-visible:ring-primary min-h-[150px] bg-background resize-none"
                 />
               </div>
