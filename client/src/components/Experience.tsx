@@ -93,7 +93,7 @@ export default function Experience() {
           </div>
           <div className="text-right hidden md:block">
             <div className="text-sm font-mono text-muted-foreground">Total Experience</div>
-            <div className="text-3xl font-bold">12+ YEARS</div>
+            <div className="text-3xl font-bold">14+ YEARS</div>
           </div>
         </div>
 
